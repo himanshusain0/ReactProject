@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #ebf0ea;
+    color: #515654;
+  }
+}
+
+/* Custom Color Classes */
+.zeenat-bg-primary {
+  background-color: #ebf0ea;
+}
+
+.zeenat-bg-secondary {
+  background-color: #515654;
+}
+
+.zeenat-bg-accent {
+  background-color: #4fb28f;
+}
+
+.zeenat-text-primary {
+  color: #515654;
+}
+
+.zeenat-text-secondary {
+  color: #ebf0ea;
+}
+
+.zeenat-text-accent {
+  color: #4fb28f;
+}
+
+.zeenat-border-accent {
+  border-color: #4fb28f;
+}
+
+@theme inline {
+  --shadow-input:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}

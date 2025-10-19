@@ -67,7 +67,7 @@ const OfficeInteriors = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* HeroSection Component Use karo */}
       <HeroSection 
         images={officeImages}
@@ -81,13 +81,13 @@ const OfficeInteriors = () => {
       />
       
       {/* Before-After Section - HeroSection ke niche add karo */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-100 to-amber-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
               Office Transformations
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-amber-700 max-w-2xl mx-auto">
               See how we've transformed ordinary offices into extraordinary workspaces that boost productivity and employee satisfaction
             </p>
           </div>
@@ -105,96 +105,96 @@ const OfficeInteriors = () => {
       {/* Office Services Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-8">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-8">
             Our Office Interior Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Corporate Office Design</h3>
-              <p className="text-gray-300">Professional workspaces that reflect your brand and enhance productivity.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Corporate Office Design</h3>
+              <p className="text-amber-700">Professional workspaces that reflect your brand and enhance productivity.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Startup & Tech Offices</h3>
-              <p className="text-gray-300">Creative and flexible spaces for innovative companies and growing teams.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Startup & Tech Offices</h3>
+              <p className="text-amber-700">Creative and flexible spaces for innovative companies and growing teams.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Executive Suites</h3>
-              <p className="text-gray-300">Luxurious and functional spaces for leadership and important meetings.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Executive Suites</h3>
+              <p className="text-amber-700">Luxurious and functional spaces for leadership and important meetings.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Conference Rooms</h3>
-              <p className="text-gray-300">Professional meeting spaces with advanced technology and comfortable seating.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Conference Rooms</h3>
+              <p className="text-amber-700">Professional meeting spaces with advanced technology and comfortable seating.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Reception Areas</h3>
-              <p className="text-gray-300">Impressive entry spaces that create strong first impressions.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Reception Areas</h3>
+              <p className="text-amber-700">Impressive entry spaces that create strong first impressions.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Breakout Zones</h3>
-              <p className="text-gray-300">Comfortable areas for relaxation, collaboration, and informal meetings.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Breakout Zones</h3>
+              <p className="text-amber-700">Comfortable areas for relaxation, collaboration, and informal meetings.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Office Design Benefits */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black border-t border-slate-800">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-500 to-amber-600 border-t border-amber-400">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-12">
             Benefits of Professional Office Design
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">📈</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Increased Productivity</h3>
-              <p className="text-gray-300">Well-designed spaces can boost employee productivity by up to 20%</p>
+              <p className="text-amber-100">Well-designed spaces can boost employee productivity by up to 20%</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🤝</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Better Collaboration</h3>
-              <p className="text-gray-300">Spaces designed to encourage teamwork and creative brainstorming</p>
+              <p className="text-amber-100">Spaces designed to encourage teamwork and creative brainstorming</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🎯</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Employee Retention</h3>
-              <p className="text-gray-300">Great workspaces help attract and retain top talent</p>
+              <p className="text-amber-100">Great workspaces help attract and retain top talent</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">💼</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Brand Image</h3>
-              <p className="text-gray-300">Office design that reflects and strengthens your company brand</p>
+              <p className="text-amber-100">Office design that reflects and strengthens your company brand</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">💡</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Innovation</h3>
-              <p className="text-gray-300">Creative environments that foster innovation and new ideas</p>
+              <p className="text-amber-100">Creative environments that foster innovation and new ideas</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🌱</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Wellbeing</h3>
-              <p className="text-gray-300">Designs that prioritize employee health, comfort, and wellbeing</p>
+              <p className="text-amber-100">Designs that prioritize employee health, comfort, and wellbeing</p>
             </div>
           </div>
         </div>
@@ -203,32 +203,32 @@ const OfficeInteriors = () => {
       {/* Office Design Process */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-12">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-12">
             Our Office Design Process
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">1</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Consultation</h3>
-              <p className="text-gray-300">Understanding your company culture, workflow, and requirements</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">1</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Consultation</h3>
+              <p className="text-amber-700">Understanding your company culture, workflow, and requirements</p>
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">2</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Space Planning</h3>
-              <p className="text-gray-300">Creating efficient layouts that maximize space and functionality</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">2</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Space Planning</h3>
+              <p className="text-amber-700">Creating efficient layouts that maximize space and functionality</p>
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">3</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Design Development</h3>
-              <p className="text-gray-300">Developing detailed designs, material selection, and furniture planning</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">3</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Design Development</h3>
+              <p className="text-amber-700">Developing detailed designs, material selection, and furniture planning</p>
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">4</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Execution</h3>
-              <p className="text-gray-300">Professional implementation with minimal disruption to your business</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">4</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Execution</h3>
+              <p className="text-amber-700">Professional implementation with minimal disruption to your business</p>
             </div>
           </div>
         </div>
@@ -236,5 +236,5 @@ const OfficeInteriors = () => {
     </div>
   );
 };
-
+ 
 export default OfficeInteriors;

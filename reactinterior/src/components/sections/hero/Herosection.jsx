@@ -46,7 +46,7 @@ const HeroSection = ({
           <BlurText
             text={firstWord}
             delay={100}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold text-amber-900 tracking-tight"
             animateBy="words"
             direction="top"
             animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
@@ -60,7 +60,7 @@ const HeroSection = ({
             <BlurText
               text={remainingTitle}
               delay={150}
-              className="text-4xl md:text-6xl lg:text-7xl font-light text-white tracking-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-light text-amber-800 tracking-tight"
               animateBy="words"
               direction="bottom"
               animationFrom={{ filter: 'blur(10px)', opacity: 0, y: 50 }}
@@ -84,7 +84,7 @@ const HeroSection = ({
         <BlurText
           text={subtitle}
           delay={50}
-          className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl lg:text-2xl text-amber-700 mb-8 max-w-2xl mx-auto leading-relaxed"
           animateBy="words"
           direction="top"
           animationFrom={{ filter: 'blur(8px)', opacity: 0, y: -30 }}
@@ -120,7 +120,7 @@ const HeroSection = ({
       
       {/* Gradient Overlay */}
       {overlay && (
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-amber-900/70 via-amber-800/40 to-transparent"></div>
       )}
 
       {/* Content */}
@@ -136,7 +136,7 @@ const HeroSection = ({
           {primaryButtonText && (
             <button 
               onClick={() => primaryButtonLink && (window.location.href = primaryButtonLink)}
-              className="bg-white text-black px-8 py-4 rounded-none hover:bg-gray-100 font-semibold text-lg tracking-wider transition-all duration-300 transform hover:scale-105"
+              className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 font-semibold text-lg tracking-wider transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               {primaryButtonText}
             </button>
@@ -145,7 +145,7 @@ const HeroSection = ({
           {secondaryButtonText && (
             <button 
               onClick={() => secondaryButtonLink && (window.location.href = secondaryButtonLink)}
-              className="border-2 border-white text-white px-8 py-4 rounded-none hover:bg-white hover:text-black font-semibold text-lg tracking-wider transition-all duration-300"
+              className="border-2 border-amber-600 text-amber-700 px-8 py-4 rounded-lg hover:bg-amber-600 hover:text-white font-semibold text-lg tracking-wider transition-all duration-300 shadow-lg"
             >
               {secondaryButtonText}
             </button>
@@ -160,8 +160,8 @@ const HeroSection = ({
           data-aos-delay="800"
         >
           <div className="flex flex-col items-center">
-            <span className="text-white text-sm mb-2 tracking-widest">SCROLL TO EXPLORE</span>
-            <div className="w-px h-16 bg-white/60"></div>
+            <span className="text-amber-800 text-sm mb-2 tracking-widest">SCROLL TO EXPLORE</span>
+            <div className="w-px h-16 bg-amber-600/60"></div>
           </div>
         </div>
       )}
@@ -173,7 +173,7 @@ const HeroSection = ({
               key={index}
               onClick={() => handleImageChange(index)}
               className={`w-2 h-8 transition-all duration-300 ${
-                currentImage === index ? 'bg-white' : 'bg-white/30'
+                currentImage === index ? 'bg-amber-600' : 'bg-amber-400/30'
               }`}
             />
           ))}

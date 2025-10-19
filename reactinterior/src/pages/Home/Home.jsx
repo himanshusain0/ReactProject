@@ -144,7 +144,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* 1️⃣ Hero Section */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
         {/* Background Images Slider */}
@@ -164,7 +164,7 @@ const Home = () => {
         ))}
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-amber-900/70 via-amber-800/40 to-transparent"></div>
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -173,7 +173,7 @@ const Home = () => {
             <BlurText
               text="ZEENAT"
               delay={100}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold text-amber-900 tracking-tight"
               animateBy="words"
               direction="top"
               animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
@@ -186,7 +186,7 @@ const Home = () => {
             <BlurText
               text="INTERIOR"
               delay={150}
-              className="text-4xl md:text-6xl lg:text-7xl font-light text-white tracking-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-light text-amber-800 tracking-tight"
               animateBy="words"
               direction="bottom"
               animationFrom={{ filter: 'blur(10px)', opacity: 0, y: 50 }}
@@ -202,7 +202,7 @@ const Home = () => {
           <BlurText
             text="Crafting timeless spaces that inspire and transform your vision into reality"
             delay={50}
-            className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl lg:text-2xl text-amber-700 mb-8 max-w-2xl mx-auto leading-relaxed"
             animateBy="words"
             direction="top"
             animationFrom={{ filter: 'blur(8px)', opacity: 0, y: -30 }}
@@ -219,10 +219,10 @@ const Home = () => {
             data-aos="fade-up"
             data-aos-delay="600"
           >
-            <button className="bg-white text-black px-8 py-4 rounded-none hover:bg-gray-100 font-semibold text-lg tracking-wider transition-all duration-300 transform hover:scale-105">
+            <button className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 font-semibold text-lg tracking-wider transition-all duration-300 transform hover:scale-105 shadow-lg">
               EXPLORE PROJECTS
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-none hover:bg-white hover:text-black font-semibold text-lg tracking-wider transition-all duration-300">
+            <button className="border-2 border-amber-600 text-amber-700 px-8 py-4 rounded-lg hover:bg-amber-600 hover:text-white font-semibold text-lg tracking-wider transition-all duration-300 shadow-lg">
               GET CONSULTATION
             </button>
           </div>
@@ -235,8 +235,8 @@ const Home = () => {
           data-aos-delay="800"
         >
           <div className="flex flex-col items-center">
-            <span className="text-white text-sm mb-2 tracking-widest">SCROLL TO EXPLORE</span>
-            <div className="w-px h-16 bg-white/60"></div>
+            <span className="text-amber-800 text-sm mb-2 tracking-widest">SCROLL TO EXPLORE</span>
+            <div className="w-px h-16 bg-amber-600/60"></div>
           </div>
         </div>
 
@@ -247,34 +247,33 @@ const Home = () => {
               key={index}
               onClick={() => setCurrentImage(index)}
               className={`w-2 h-8 transition-all duration-300 ${
-                currentImage === index ? 'bg-white' : 'bg-white/30'
+                currentImage === index ? 'bg-amber-600' : 'bg-amber-400/30'
               }`}
             />
           ))}
         </div>
       </section>
 
-      {/* Rest of the sections remain the same */}
       {/* 2️⃣ Services Grid with 3D Cards */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-slate-200 mb-16" data-aos="fade-up">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-16" data-aos="fade-up">
             Our Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <CardContainer key={index} className="inter-var">
-                <CardBody className="bg-gradient-to-br from-slate-900 to-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-slate-800">
+                <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-amber-500/[0.1] border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-amber-100">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-slate-200 dark:text-white"
+                    className="text-xl font-bold text-gray-800"
                   >
                     {service.title}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-slate-400 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-gray-600 text-sm max-w-sm mt-2"
                   >
                     {service.description}
                   </CardItem>
@@ -297,7 +296,7 @@ const Home = () => {
                       translateZ={20}
                       translateX={-40}
                       as="button"
-                      className="px-4 py-2 rounded-xl text-xs font-normal text-slate-300 dark:text-white hover:text-white transition-colors"
+                      className="px-4 py-2 rounded-xl text-xs font-normal text-gray-500 hover:text-amber-600 transition-colors"
                     >
                       {service.buttonText}
                     </CardItem>
@@ -305,7 +304,7 @@ const Home = () => {
                       translateZ={20}
                       translateX={40}
                       as="button"
-                      className="px-4 py-2 rounded-xl bg-slate-700 dark:bg-slate-600 dark:text-white text-white text-xs font-bold hover:bg-slate-600 transition-colors"
+                      className="px-4 py-2 rounded-xl bg-amber-600 text-white text-xs font-bold hover:bg-amber-700 transition-colors"
                     >
                       Learn More
                     </CardItem>
@@ -318,25 +317,25 @@ const Home = () => {
       </section>
 
       {/* 3️⃣ Featured Collections with 3D Cards */}
-      <section className="py-20 px-4 bg-gradient-to-br from-slate-900 to-black border-y border-slate-800">
+      <section className="py-20 px-4 bg-gradient-to-br from-amber-50 to-amber-100 border-y border-amber-200">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-slate-200 mb-16" data-aos="fade-up">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-16" data-aos="fade-up">
             Featured Collections
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredCollections.map((collection, index) => (
               <CardContainer key={index} className="inter-var">
-                <CardBody className="bg-gradient-to-br from-slate-900 to-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-cyan-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-slate-800">
+                <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-amber-500/[0.1] border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-amber-100">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-slate-200 dark:text-white text-center"
+                    className="text-xl font-bold text-gray-800 text-center"
                   >
                     {collection.title}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-slate-400 text-sm max-w-sm mt-2 dark:text-neutral-300 text-center"
+                    className="text-gray-600 text-sm max-w-sm mt-2 text-center"
                   >
                     {collection.description}
                   </CardItem>
@@ -358,7 +357,7 @@ const Home = () => {
                     <CardItem
                       translateZ={20}
                       as="button"
-                      className="px-6 py-3 rounded-xl bg-slate-700 dark:bg-slate-600 dark:text-white text-white text-sm font-bold hover:bg-slate-600 transition-colors"
+                      className="px-6 py-3 rounded-xl bg-amber-600 text-white text-sm font-bold hover:bg-amber-700 transition-colors"
                     >
                       {collection.buttonText}
                     </CardItem>
@@ -373,23 +372,23 @@ const Home = () => {
       {/* 4️⃣ Just In with 3D Cards */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-slate-200 mb-16" data-aos="fade-up">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-16" data-aos="fade-up">
             Just In: Fresh Styles for Your Home
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {justInItems.map((item, index) => (
               <CardContainer key={index} className="inter-var">
-                <CardBody className="bg-gradient-to-br from-slate-900 to-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-purple-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-slate-800">
+                <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-amber-500/[0.1] border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-amber-100">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-slate-200 dark:text-white"
+                    className="text-xl font-bold text-gray-800"
                   >
                     {item.title}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-slate-400 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-gray-600 text-sm max-w-sm mt-2"
                   >
                     {item.description}
                   </CardItem>
@@ -412,7 +411,7 @@ const Home = () => {
                       translateZ={20}
                       translateX={-40}
                       as="button"
-                      className="px-4 py-2 rounded-xl text-xs font-normal text-slate-300 dark:text-white hover:text-white transition-colors"
+                      className="px-4 py-2 rounded-xl text-xs font-normal text-gray-500 hover:text-amber-600 transition-colors"
                     >
                       {item.buttonText}
                     </CardItem>
@@ -420,7 +419,7 @@ const Home = () => {
                       translateZ={20}
                       translateX={40}
                       as="button"
-                      className="px-4 py-2 rounded-xl bg-slate-700 dark:bg-slate-600 dark:text-white text-white text-xs font-bold hover:bg-slate-600 transition-colors"
+                      className="px-4 py-2 rounded-xl bg-amber-600 text-white text-xs font-bold hover:bg-amber-700 transition-colors"
                     >
                       Get Quote
                     </CardItem>
@@ -435,25 +434,25 @@ const Home = () => {
       <DreamRewards/>
 
       {/* 5️⃣ Trending Sectionals with 3D Cards */}
-      <section className="py-20 px-4 bg-gradient-to-br from-slate-900 to-black border-y border-slate-800">
+      <section className="py-20 px-4 bg-gradient-to-br from-amber-50 to-amber-100 border-y border-amber-200">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-slate-200 mb-16" data-aos="fade-up">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-16" data-aos="fade-up">
             Trending Modular Sectionals
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {trendingSectionals.map((item, index) => (
               <CardContainer key={index} className="inter-var">
-                <CardBody className="bg-gradient-to-br from-slate-900 to-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-slate-800">
+                <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-amber-500/[0.1] border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-amber-100">
                   <CardItem
                     translateZ="50"
-                    className="text-2xl font-bold text-slate-200 dark:text-white"
+                    className="text-2xl font-bold text-gray-800"
                   >
                     {item.title}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-slate-400 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-gray-600 text-sm max-w-sm mt-2"
                   >
                     {item.description}
                   </CardItem>
@@ -476,7 +475,7 @@ const Home = () => {
                       translateZ={20}
                       translateX={-40}
                       as="button"
-                      className="px-4 py-2 rounded-xl text-xs font-normal text-slate-300 dark:text-white hover:text-white transition-colors"
+                      className="px-4 py-2 rounded-xl text-xs font-normal text-gray-500 hover:text-amber-600 transition-colors"
                     >
                       {item.buttonText}
                     </CardItem>
@@ -484,7 +483,7 @@ const Home = () => {
                       translateZ={20}
                       translateX={40}
                       as="button"
-                      className="px-4 py-2 rounded-xl bg-slate-700 dark:bg-slate-600 dark:text-white text-white text-xs font-bold hover:bg-slate-600 transition-colors"
+                      className="px-4 py-2 rounded-xl bg-amber-600 text-white text-xs font-bold hover:bg-amber-700 transition-colors"
                     >
                       Learn More
                     </CardItem>
@@ -499,9 +498,9 @@ const Home = () => {
       {/* 6️⃣ Happy Customers with Animated Tooltip */}
       <section className="py-20 px-4 text-center">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-slate-200 mb-8" data-aos="fade-up">Happy Customers Served</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto mb-12 text-lg" data-aos="fade-up" data-aos-delay="200">
-            Over <span className="font-semibold text-slate-300">10,000+</span> customers have trusted us to transform their spaces beautifully.
+          <h2 className="text-4xl font-bold text-amber-900 mb-8" data-aos="fade-up">Happy Customers Served</h2>
+          <p className="text-amber-700 max-w-2xl mx-auto mb-12 text-lg" data-aos="fade-up" data-aos-delay="200">
+            Over <span className="font-semibold text-amber-800">10,000+</span> customers have trusted us to transform their spaces beautifully.
           </p>
           
           {/* Animated Tooltip */}
@@ -513,14 +512,14 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             {customerStories.slice(0, 3).map((customer, index) => (
               <CardContainer key={customer.id} className="inter-var">
-                <CardBody className="bg-gradient-to-br from-slate-900 to-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-pink-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-slate-800">
+                <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-amber-500/[0.1] border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border border-amber-100">
                   <CardItem 
                     translateZ="80" 
                     rotateX={10} 
                     rotateZ={-5} 
                     className="w-full flex justify-center"
                   >
-                    <div className="h-20 w-20 bg-slate-700 rounded-full mx-auto mb-6 overflow-hidden">
+                    <div className="h-20 w-20 bg-amber-200 rounded-full mx-auto mb-6 overflow-hidden border-2 border-amber-300">
                       <img 
                         src={customer.avatar}
                         alt={customer.name}
@@ -530,21 +529,21 @@ const Home = () => {
                   </CardItem>
                   <CardItem
                     translateZ="50"
-                    className="text-lg font-semibold text-slate-200 dark:text-white mb-4"
+                    className="text-lg font-semibold text-gray-800 mb-4"
                   >
                     {customer.name}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-slate-400 text-sm mb-2 dark:text-neutral-300"
+                    className="text-gray-600 text-sm mb-2"
                   >
                     {customer.designation}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-slate-400 text-sm mb-4 dark:text-neutral-300 italic"
+                    className="text-gray-600 text-sm mb-4 italic"
                   >
                     "{customer.story.testimonial.split('"').join('').substring(0, 100)}..."
                   </CardItem>
@@ -553,7 +552,7 @@ const Home = () => {
                       <CardItem
                         translateZ={20}
                         as="button"
-                        className="px-4 py-2 rounded-xl bg-slate-700 dark:bg-slate-600 dark:text-white text-white text-xs font-bold hover:bg-slate-600 transition-colors"
+                        className="px-4 py-2 rounded-xl bg-amber-600 text-white text-xs font-bold hover:bg-amber-700 transition-colors"
                       >
                         Read Full Story →
                       </CardItem>
@@ -566,8 +565,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 7️⃣ NEW FAQ Section with Provided Design */}
-      <section className="py-20 px-4 bg-gradient-to-br from-slate-900 to-black border-y border-slate-800">
+      {/* 7️⃣ FAQ Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-amber-50 to-amber-100 border-y border-amber-200">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start justify-center gap-8 md:gap-12">
             {/* Image Section */}
@@ -581,9 +580,9 @@ const Home = () => {
             
             {/* FAQ Content Section */}
             <div className="w-full" data-aos="fade-left">
-              <p className="text-indigo-400 text-sm font-medium mb-2">FAQ's</p>
-              <h2 className="text-3xl font-semibold text-slate-200 mb-4">Looking for answers?</h2>
-              <p className="text-sm text-slate-400 mb-8">
+              <p className="text-amber-600 text-sm font-medium mb-2">FAQ's</p>
+              <h2 className="text-3xl font-semibold text-amber-900 mb-4">Looking for answers?</h2>
+              <p className="text-sm text-amber-700 mb-8">
                 Get all your questions answered about our interior design services, process, and what to expect when working with us.
               </p>
               
@@ -594,11 +593,11 @@ const Home = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="border-b border-slate-700 pb-4 cursor-pointer transition-all duration-300 hover:border-slate-500"
+                    className="border-b border-amber-200 pb-4 cursor-pointer transition-all duration-300 hover:border-amber-400"
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   >
                     <div className="flex items-center justify-between">
-                      <h3 className="text-base font-medium text-slate-200 pr-4">
+                      <h3 className="text-base font-medium text-gray-800 pr-4">
                         {faq.question}
                       </h3>
                       <svg 
@@ -613,7 +612,7 @@ const Home = () => {
                       >
                         <path 
                           d="m4.5 7.2 3.793 3.793a1 1 0 0 0 1.414 0L13.5 7.2" 
-                          stroke="#94a3b8" 
+                          stroke="#d97706" 
                           strokeWidth="1.5" 
                           strokeLinecap="round" 
                           strokeLinejoin="round" 
@@ -627,7 +626,7 @@ const Home = () => {
                           animate={{ opacity: 1, height: 'auto' }}
                           exit={{ opacity: 0, height: 0 }}
                           transition={{ duration: 0.3 }}
-                          className="text-sm text-slate-400 transition-all duration-500 ease-in-out pt-3 leading-relaxed"
+                          className="text-sm text-amber-700 transition-all duration-500 ease-in-out pt-3 leading-relaxed"
                         >
                           {faq.answer}
                         </motion.p>
@@ -638,9 +637,9 @@ const Home = () => {
               </div>
               
               {/* Additional CTA */}
-              <div className="mt-8 p-4 bg-slate-800 rounded-lg border border-slate-700">
-                <p className="text-slate-300 text-sm mb-3">Still have questions?</p>
-                <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-300">
+              <div className="mt-8 p-4 bg-amber-100 rounded-lg border border-amber-200">
+                <p className="text-amber-800 text-sm mb-3">Still have questions?</p>
+                <button className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-300">
                   Contact Our Team
                 </button>
               </div>

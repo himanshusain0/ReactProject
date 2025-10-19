@@ -66,7 +66,7 @@ const CustomFurniture = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* HeroSection Component Use karo */}
       <HeroSection 
         images={furnitureImages}
@@ -80,13 +80,13 @@ const CustomFurniture = () => {
       />
       
       {/* Before-After Section - HeroSection ke niche add karo */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-100 to-amber-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
               Furniture Transformations
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-amber-700 max-w-2xl mx-auto">
               See how we transform raw materials into exquisite custom furniture pieces that perfectly fit your space and style
             </p>
           </div>
@@ -103,80 +103,80 @@ const CustomFurniture = () => {
       {/* Custom Furniture Services Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-8">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-8">
             Our Custom Furniture Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Living Room Furniture</h3>
-              <p className="text-gray-300">Custom sofas, coffee tables, entertainment units, and shelving solutions.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Living Room Furniture</h3>
+              <p className="text-amber-700">Custom sofas, coffee tables, entertainment units, and shelving solutions.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Bedroom Furniture</h3>
-              <p className="text-gray-300">Bespoke bed frames, wardrobes, nightstands, and dressing tables.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Bedroom Furniture</h3>
+              <p className="text-amber-700">Bespoke bed frames, wardrobes, nightstands, and dressing tables.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Dining Room Sets</h3>
-              <p className="text-gray-300">Custom dining tables, chairs, sideboards, and display cabinets.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Dining Room Sets</h3>
+              <p className="text-amber-700">Custom dining tables, chairs, sideboards, and display cabinets.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Home Office Furniture</h3>
-              <p className="text-gray-300">Ergonomic desks, bookshelves, storage units, and conference tables.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Home Office Furniture</h3>
+              <p className="text-amber-700">Ergonomic desks, bookshelves, storage units, and conference tables.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Built-in Furniture</h3>
-              <p className="text-gray-300">Custom built-in wardrobes, kitchen cabinets, and storage solutions.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Built-in Furniture</h3>
+              <p className="text-amber-700">Custom built-in wardrobes, kitchen cabinets, and storage solutions.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Outdoor Furniture</h3>
-              <p className="text-gray-300">Weather-resistant custom furniture for balconies, patios, and gardens.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Outdoor Furniture</h3>
+              <p className="text-amber-700">Weather-resistant custom furniture for balconies, patios, and gardens.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Materials & Craftsmanship */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black border-t border-slate-800">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-500 to-amber-600 border-t border-amber-400">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-12">
             Premium Materials & Craftsmanship
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🌳</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Solid Wood</h3>
-              <p className="text-gray-300">Premium teak, oak, walnut, and sheesham wood for durability and beauty</p>
+              <p className="text-amber-100">Premium teak, oak, walnut, and sheesham wood for durability and beauty</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🛠️</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Expert Craftsmanship</h3>
-              <p className="text-gray-300">Skilled artisans with decades of experience in fine furniture making</p>
+              <p className="text-amber-100">Skilled artisans with decades of experience in fine furniture making</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🎨</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Custom Finishes</h3>
-              <p className="text-gray-300">Wide range of stains, paints, and polish options to match your decor</p>
+              <p className="text-amber-100">Wide range of stains, paints, and polish options to match your decor</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">⚡</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Modern Hardware</h3>
-              <p className="text-gray-300">Premium hinges, handles, and mechanisms for smooth operation</p>
+              <p className="text-amber-100">Premium hinges, handles, and mechanisms for smooth operation</p>
             </div>
           </div>
         </div>
@@ -185,72 +185,72 @@ const CustomFurniture = () => {
       {/* Custom Furniture Process */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-12">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-12">
             Our Custom Furniture Process
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">1</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Consultation & Design</h3>
-              <p className="text-gray-300">Understanding your needs, space constraints, and design preferences</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">1</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Consultation & Design</h3>
+              <p className="text-amber-700">Understanding your needs, space constraints, and design preferences</p>
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">2</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Material Selection</h3>
-              <p className="text-gray-300">Choosing the perfect wood, finishes, and hardware for your piece</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">2</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Material Selection</h3>
+              <p className="text-amber-700">Choosing the perfect wood, finishes, and hardware for your piece</p>
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">3</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Crafting & Production</h3>
-              <p className="text-gray-300">Skilled artisans handcraft your furniture with attention to detail</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">3</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Crafting & Production</h3>
+              <p className="text-amber-700">Skilled artisans handcraft your furniture with attention to detail</p>
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">4</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Delivery & Installation</h3>
-              <p className="text-gray-300">Professional delivery and installation at your location</p>
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold shadow-lg">4</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Delivery & Installation</h3>
+              <p className="text-amber-700">Professional delivery and installation at your location</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why Choose Custom Furniture */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black border-t border-slate-800">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-500 to-amber-600 border-t border-amber-400">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-12">
             Why Choose Custom Furniture?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg">
+            <div className="bg-amber-400/20 p-6 rounded-lg border border-amber-300/30">
               <h3 className="text-xl font-semibold text-white mb-3">Perfect Fit</h3>
-              <p className="text-gray-300">Furniture designed specifically for your space dimensions and layout</p>
+              <p className="text-amber-100">Furniture designed specifically for your space dimensions and layout</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
+            <div className="bg-amber-400/20 p-6 rounded-lg border border-amber-300/30">
               <h3 className="text-xl font-semibold text-white mb-3">Unique Design</h3>
-              <p className="text-gray-300">One-of-a-kind pieces that reflect your personal style and taste</p>
+              <p className="text-amber-100">One-of-a-kind pieces that reflect your personal style and taste</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
+            <div className="bg-amber-400/20 p-6 rounded-lg border border-amber-300/30">
               <h3 className="text-xl font-semibold text-white mb-3">Superior Quality</h3>
-              <p className="text-gray-300">Handcrafted with premium materials and expert craftsmanship</p>
+              <p className="text-amber-100">Handcrafted with premium materials and expert craftsmanship</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
+            <div className="bg-amber-400/20 p-6 rounded-lg border border-amber-300/30">
               <h3 className="text-xl font-semibold text-white mb-3">Functional Design</h3>
-              <p className="text-gray-300">Customized storage solutions and features for your specific needs</p>
+              <p className="text-amber-100">Customized storage solutions and features for your specific needs</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
+            <div className="bg-amber-400/20 p-6 rounded-lg border border-amber-300/30">
               <h3 className="text-xl font-semibold text-white mb-3">Longevity</h3>
-              <p className="text-gray-300">Built to last for generations with proper care and maintenance</p>
+              <p className="text-amber-100">Built to last for generations with proper care and maintenance</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
+            <div className="bg-amber-400/20 p-6 rounded-lg border border-amber-300/30">
               <h3 className="text-xl font-semibold text-white mb-3">Value Addition</h3>
-              <p className="text-gray-300">Enhances your property value and creates a cohesive interior look</p>
+              <p className="text-amber-100">Enhances your property value and creates a cohesive interior look</p>
             </div>
           </div>
         </div>

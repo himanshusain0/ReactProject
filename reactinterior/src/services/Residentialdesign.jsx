@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../components/sections/hero/Herosection';
-import BeforeAfter from '../components/sections/features/BeforeAfter'; // ✅ Naya component import karo
+import BeforeAfter from '../components/sections/features/BeforeAfter';
 import residentialHero1 from '../assets/images/resImg1.jpg';
 import residentialHero2 from '../assets/images/resImg2.jpg';
 import residentialHero3 from '../assets/images/resImg3.jpg';
@@ -67,7 +67,7 @@ const ResidentialDesign = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* HeroSection Component Use karo */}
       <HeroSection 
         images={residentialImages}
@@ -81,13 +81,13 @@ const ResidentialDesign = () => {
       />
       
       {/* Before-After Section - HeroSection ke niche add karo */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-100 to-amber-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
               Witness The Transformation
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-amber-700 max-w-2xl mx-auto">
               See how we've transformed ordinary spaces into extraordinary homes
             </p>
           </div>
@@ -105,23 +105,23 @@ const ResidentialDesign = () => {
       {/* Yahan par aapki residential design page ka baaki content hoga */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-8">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-8">
             Our Residential Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Living Room Design</h3>
-              <p className="text-gray-300">Beautiful and functional living spaces for relaxation and entertainment.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Living Room Design</h3>
+              <p className="text-amber-700">Beautiful and functional living spaces for relaxation and entertainment.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Bedroom Design</h3>
-              <p className="text-gray-300">Serene and comfortable bedrooms for restful sleep.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Bedroom Design</h3>
+              <p className="text-amber-700">Serene and comfortable bedrooms for restful sleep.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Kitchen Design</h3>
-              <p className="text-gray-300">Modern and efficient kitchen designs for culinary enthusiasts.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Kitchen Design</h3>
+              <p className="text-amber-700">Modern and efficient kitchen designs for culinary enthusiasts.</p>
             </div>
           </div>
         </div>

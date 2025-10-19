@@ -66,7 +66,7 @@ const CommercialDesign = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* HeroSection Component Use karo */}
       <HeroSection 
         images={commercialImages}
@@ -80,13 +80,13 @@ const CommercialDesign = () => {
       />
       
       {/* Before-After Section - HeroSection ke niche add karo */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-100 to-amber-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
               Commercial Transformations
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-amber-700 max-w-2xl mx-auto">
               See how we've transformed business spaces to enhance productivity, brand image, and customer experience
             </p>
           </div>
@@ -103,80 +103,80 @@ const CommercialDesign = () => {
       {/* Commercial Services Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-8">
+          <h2 className="text-4xl font-bold text-center text-amber-900 mb-8">
             Our Commercial Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Office Design</h3>
-              <p className="text-gray-300">Productive and inspiring workspace designs that foster creativity and collaboration.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Office Design</h3>
+              <p className="text-amber-700">Productive and inspiring workspace designs that foster creativity and collaboration.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Retail Store Design</h3>
-              <p className="text-gray-300">Engaging retail environments that enhance customer experience and boost sales.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Retail Store Design</h3>
+              <p className="text-amber-700">Engaging retail environments that enhance customer experience and boost sales.</p>
             </div>
             
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Restaurant & Cafe</h3>
-              <p className="text-gray-300">Memorable dining spaces that reflect your brand and delight your customers.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Restaurant & Cafe</h3>
+              <p className="text-amber-700">Memorable dining spaces that reflect your brand and delight your customers.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Hotel & Hospitality</h3>
-              <p className="text-gray-300">Luxurious hospitality spaces that create unforgettable guest experiences.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Hotel & Hospitality</h3>
+              <p className="text-amber-700">Luxurious hospitality spaces that create unforgettable guest experiences.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Healthcare Facilities</h3>
-              <p className="text-gray-300">Comfortable and efficient medical spaces prioritizing patient care.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Healthcare Facilities</h3>
+              <p className="text-amber-700">Comfortable and efficient medical spaces prioritizing patient care.</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">Educational Spaces</h3>
-              <p className="text-gray-300">Inspiring learning environments that promote education and innovation.</p>
+            <div className="bg-white p-6 rounded-lg border border-amber-100 shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Educational Spaces</h3>
+              <p className="text-amber-700">Inspiring learning environments that promote education and innovation.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Additional Commercial Features */}
-      <section className="py-20 px-4 bg-gradient-to-b from-slate-900 to-black border-t border-slate-800">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-500 to-amber-600 border-t border-amber-400">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-12">
             Why Choose Our Commercial Design Services?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">🏢</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Brand Alignment</h3>
-              <p className="text-gray-300">Designs that reflect and enhance your brand identity</p>
+              <p className="text-amber-100">Designs that reflect and enhance your brand identity</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">⚡</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Productivity Focus</h3>
-              <p className="text-gray-300">Spaces designed to maximize efficiency and workflow</p>
+              <p className="text-amber-100">Spaces designed to maximize efficiency and workflow</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">💰</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">ROI Driven</h3>
-              <p className="text-gray-300">Designs that deliver measurable business returns</p>
+              <p className="text-amber-100">Designs that deliver measurable business returns</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-white text-2xl">⏱️</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Timely Delivery</h3>
-              <p className="text-gray-300">Projects completed on schedule with minimal disruption</p>
+              <p className="text-amber-100">Projects completed on schedule with minimal disruption</p>
             </div>
           </div>
         </div>
